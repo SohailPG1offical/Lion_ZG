@@ -775,7 +775,7 @@ local MasterLoginUI = (function()
                 add(titleTag, 62, 14, 280, 26, 5)
 
                 local subTag = make("TextBlock", data.container)
-                subTag:SetText("@DFsheena | VIP ACCESS")
+                subTag:SetText("@Lion_ZG | VIP ACCESS")
                 setTextStyle(subTag, 10, color(0.85, 0.85, 0.85, 0.9))
                 visibility(subTag, passive)
                 add(subTag, 63, 40, 280, 16, 5)
@@ -856,7 +856,7 @@ local MasterLoginUI = (function()
                 add(buyBarTrim, 26, 140, 3, 24, 6)
 
                 local buyText = make("TextBlock", data.container)
-                buyText:SetText("BUY KEY: Telegram @@DFsheena")
+                buyText:SetText("BUY KEY: Telegram @@Lion_ZG")
                 setTextStyle(buyText, 11, color(1.0, 0.90, 0.40, 1.0))
                 visibility(buyText, passive)
                 add(buyText, 36, 144, W - 72, 18, 7)
@@ -995,7 +995,7 @@ local MasterWelcomeUI = (function()
         end
         local WelcomeUI = {Width = 600, Height = 276}
         local WelcomeText = {
-            "Welcome to @@DFsheena Lua mod",
+            "Welcome to @@Lion_ZG Lua mod",
             "No Kill Limit",
             "Play smart and avoid reports",
         }
@@ -7032,7 +7032,7 @@ local function GetConfigPaths(fileName)
     return paths
 end
 
-local ConfigFileName = "@DFsheena_settings.txt"
+local ConfigFileName = "@Lion_ZG_settings.txt"
 _G.LastConfigSaveStr = ""
 
 _G.SaveModSettings = function()
@@ -7646,7 +7646,7 @@ local function MainLoop()
     end
     
     local FakeTextMap = {
-        [999000] = T("♛@DFsheena♛"),
+        [999000] = T("♛@Lion_ZG♛"),
         [999001] = T("♛V2 ESP♛"),
         [999003] = T("♛V2 AIMBOT♛"),
         [999004] = T("♛PREMIUM SKINS♛"),
@@ -7865,15 +7865,15 @@ local function ShowLexusVIPMenu()
         if not Msg or not Msg.Show then return end
 
         local function Step_ScamAlert()
-            local title = "@DFsheena PAK FILE"
-            local content = "@DFsheena MOD\n=======================\nTELEGRAM - https://t.me/DFsheena\nOWNER - @@DFsheena\n======================="
+            local title = "@Lion_ZG PAK FILE"
+            local content = "@Lion_ZG MOD\n=======================\nTELEGRAM - https://t.me/Lion_ZG\nOWNER - @@Lion_ZG\n======================="
             local btn1 = "JOIN"
             local btn2 = "CLOSE"
             Msg.Show(1, title, content,
                 function()
                     local Web = require("client.slua.logic.url.logic_webview_sdk")
                     if Web and Web.OpenURL then
-                        Web:OpenURL("https://t.me/DFsheena")
+                        Web:OpenURL("https://t.me/Lion_ZG")
                     end
                 end,
                 function() end, btn1, btn2)
@@ -7882,7 +7882,7 @@ local function ShowLexusVIPMenu()
         end
 
         local function Step_Welcome()
-            local title = "@DFsheena"
+            local title = "@Lion_ZG"
             local content = "OK"
             local btn1 = "OK"
             local btn2 = "CLOSE"
@@ -7896,8 +7896,8 @@ local function ShowLexusVIPMenu()
         end
 
         local function Step_SelectLanguage()
-            Msg.Show(2, "@DFsheena - @@DFsheena",
-                "@DFsheena CHANNEL\nHACK FILE CHANNEL JOIN\nhttps://t.me/DFsheena\nOwner ---> @@DFsheena",
+            Msg.Show(2, "@Lion_ZG - @@Lion_ZG",
+                "@Lion_ZG CHANNEL\nHACK FILE CHANNEL JOIN\nhttps://t.me/Lion_ZG\nOwner ---> @@Lion_ZG",
                 function()
                     _G.LexusLang = "EN"
                     Step_Welcome()
