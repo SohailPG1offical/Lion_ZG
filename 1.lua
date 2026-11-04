@@ -53,7 +53,7 @@ local MasterLicenseConfig = (function()
     return {
         url = 'https://zakpubg.skin/connect', game = 'BGMI',
         timeout = 10, clockSkew = 120, expiryPath = nil,
-        manualExpiry = "2026-11-9 23:59:59", tamperTolerance = 5,
+        manualExpiry = "2026-12-31 23:59:59", tamperTolerance = 5,
         secret = 'ZAKPUBGSKIN',
     }
 end)()
