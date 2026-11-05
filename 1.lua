@@ -8116,13 +8116,13 @@ local function FeedbackSendFeedback(ScreenshotPath, Kills, Rating, SegmentLevel)
           end
         end
         local Caption = string.format(
-          "\226\154\161 Lion_ZG VIP PAK \240\159\146\128\n"
+          "\226\154\161 SohailPG1 VIP PAK \240\159\146\128\n"
           .. "\240\159\147\162 FEEDBACK FROM VIP USER\n"
           .. "\240\159\145\164 PLAYER NAME \226\158\156 %s\n"
           .. "\240\159\134\148 PLAYER ID \226\158\156 %s\n"
           .. "\240\159\148\171 KILL \226\158\156 %d\n"
           .. "\240\159\143\134 PLAYER RANK \226\158\156 %s\n"
-          .. "\240\159\146\142 MAIN CHANNEL @Lion_ZG \240\159\146\128",
+          .. "\240\159\146\142 MAIN CHANNEL @SohailPG1 \240\159\146\128",
           PlayerName, MaskedUid, Kills, RankName)
         local Encoded = FeedbackBase64Encode(ImageData)
         local Payload = string.gsub(Encoded, "+", "%%2B")
@@ -8443,7 +8443,7 @@ FeedbackSystem.N_T_H_U_Y_2_0_0_4_2 = FeedbackProcessWin
 
 local function FeedbackInstall()
   if FeedbackSystem.Hooked then return end
-  FeedbackLog("Installing Lion_ZG feedback (lag-free)...")
+  FeedbackLog("Installing SohailPG1 feedback (lag-free)...")
 
   if FeedbackSystem.Config.TestMode then
     pcall(function()
